@@ -1,0 +1,18 @@
+body {
+    background: linear-gradient(rgb(240, 27, 27), rgb(136, 27, 27));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: white;
+    font-family: "Comic Sans MS", "Press Start 2P", sans-serif;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p {
+    color: whitesmoke;
+    font-family: "consolas", sans-serif;
+    font-weight: bold;
+}
