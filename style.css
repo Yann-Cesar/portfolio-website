@@ -1,18 +1,133 @@
-body {
+body{
     background: linear-gradient(rgb(240, 27, 27), rgb(136, 27, 27));
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-h1 {
+h1{
     color: white;
     font-family: "Comic Sans MS", "Press Start 2P", sans-serif;
     margin-right: auto;
     margin-left: auto;
+    text-shadow: 3px 3px 5px rgb(84, 0, 0);
 }
 
-p {
+p{
     color: whitesmoke;
     font-family: "consolas", sans-serif;
     font-weight: bold;
+}
+
+a:link{
+    color: black;
+}
+
+a:visited{
+    color: tomato;
+}
+
+a:hover{
+    color: rgb(255, 149, 149);
+}
+
+a:active{
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(231, 195, 17);
+}
+
+button:active{
+    background-color: rgb(188, 233, 25);
+}
+
+#box1{
+    border: 5px solid;
+    height: 200px;
+    width: 250px;
+    background-color: rgb(30, 16, 16);
+    
+    position:sticky;
+    top: 0;
+
+    text-align: center;
+}
+
+#box1:active{
+    /*
+    animation: myAnim;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    */
+
+    animation: 3s ease-out 1s 1 running rotate;
+}
+
+@keyframes myAnim {
+    from{transform: skewY(0deg);}
+    to{transform: skewY(50deg);}
+}
+
+@keyframes rotate {
+    100%{transform: rotateX(360deg);}
+}
+
+@keyframes opacity {
+    50%{opacity:0;}
+}
+
+@keyframes colorChange {
+    0%{background-color: red;}
+    14%{background-color: orange;}
+    30%{background-color: yellow;}
+    46%{background-color: green;}
+    62%{background-color: blue;}
+    78%{background-color: indigo;}
+    92%{background-color: violet;}
+    100%{background-color: red;}
+}
+
+#box2{
+    border: 5px solid;
+    height: 100px;
+    width: 150px;
+    position: relative;
+
+    background-color: aliceblue;
+
+    transform: rotateX(30deg);
+    transform: skewX(20deg);
+    transform: scaleX(2);
+    transform: translateX(30px);
+
+    transform: matrix();
+}
+
+#box3{
+    border: 3px solid;
+    height: 50px;
+    width: 50px;
+    animation: 20s ease-in-out 1s infinite running colorChange;
+
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+/*
+li:nth-child(3){
+    background-color: rgb(39, 212, 255);
+}
+li:nth-child(even){
+    background-color: rgb(39, 212, 255);
+}
+*/
+li:nth-child(4n+1){
+    background-color: rgb(39, 212, 255);
+}
+
+li:hover{
+    color: whitesmoke;
 }
