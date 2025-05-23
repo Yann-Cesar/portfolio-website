@@ -1,52 +1,71 @@
 body{
-    background: linear-gradient(rgb(240, 27, 27), rgb(136, 27, 27));
+    background: #EDF2F4;
+    /*linear-gradient(rgb(240, 27, 27), rgb(136, 27, 27));*/
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 h1{
-    color: white;
+    color: #2B2D42;
     font-family: "Comic Sans MS", "Press Start 2P", sans-serif;
     margin-right: auto;
     margin-left: auto;
-    text-shadow: 3px 3px 5px rgb(84, 0, 0);
+    text-shadow: 3px 3px 5px #EF233C;
 }
 
 p{
-    color: whitesmoke;
+    color: #2B2D42;
     font-family: "consolas", sans-serif;
     font-weight: bold;
 }
 
+#pbox{
+    color: #EDF2F4;
+    font-family: "consolas", sans-serif;
+}
+/*
 a:link{
-    color: black;
+    color: #EDF2F4;
 }
 
 a:visited{
     color: tomato;
 }
-
 a:hover{
-    color: rgb(255, 149, 149);
+    color: #EF233C;
 }
 
 a:active{
-    color: white;
+    color: #EF233C;
+}
+*/
+button{
+    background-color: #2B2D42;
+    color: #EDF2F4;
+}
+
+button:visited{
+    background-color: #2B2D42;
+    color: #EDF2F4;
 }
 
 button:hover{
-    background-color: rgb(231, 195, 17);
+    background-color: #EDF2F4;
+    color: #EF233C;
 }
 
 button:active{
-    background-color: rgb(188, 233, 25);
+    background-color: #EDF2F4;
+    color: #EF233C;
 }
 
 #box1{
     border: 5px solid;
     height: 200px;
     width: 250px;
-    background-color: rgb(30, 16, 16);
+    border-color: #EF233C;
+    background-color: #2B2D42;
+    border-radius: 10%;
     
     position:sticky;
     top: 0;
@@ -116,6 +135,7 @@ button:active{
     top: 25px;
     left: 25px;
 }
+
 /*
 li:nth-child(3){
     background-color: rgb(39, 212, 255);
@@ -124,10 +144,11 @@ li:nth-child(even){
     background-color: rgb(39, 212, 255);
 }
 */
-li:nth-child(4n+1){
-    background-color: rgb(39, 212, 255);
+
+li:nth-child(2n+1){
+    background-color: #8D99AE;
 }
 
 li:hover{
-    color: whitesmoke;
+    color: #EF233C;
 }
