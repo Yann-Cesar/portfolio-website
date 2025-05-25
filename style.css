@@ -6,6 +6,16 @@ body{
     background-attachment: fixed;
 }
 */
+
+colorpallet{
+    color: #d90429;
+    color: #ef233c;
+    color: #edf2f4;
+    color: #8d99ae;
+    color: #2b2d42;
+}
+
+
 body{
     margin: 0px;
 }
@@ -15,14 +25,18 @@ body{
 }
 
 #header {
+    position: fixed;
+
     top:0px;
     width: 100%;
     height: 100px;
-    border-bottom: 30%;
-    position: fixed;
+
+    border-radius: 0px 0px 20px 20px;
+    border-bottom: 10px solid #8d99ae;
+    border-left: 5px solid #8d99ae;
+    border-right: 5px solid #8d99ae;
 
     background-color: #2B2D42;
-    border-color: linear-gradient(#2B2D42, #EDF2F4);
 
     z-index: 2;
 }
@@ -30,32 +44,48 @@ body{
 #titlebox{
     width: 40%;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 h1{
     color: #EDF2F4;
     font-family: "Comic Sans MS", "Press Start 2P", sans-serif;
-    margin-right: auto;
-    margin-left: auto;
-    /*text-shadow: 3px 3px 5px #EF233C;*/
-}
-
-#middlepage{
-    position: relative;
-    top: 100px;
-
-    background: linear-gradient(#EDF2F4, #ced9de);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: 0;
+    text-shadow: 2px 2px 0px #EF233C;
 }
 
 #faketext{
     position: relative;
     left: 10px;
+    width: 99%;
+}
+
+#middlepage{
+    position: relative;
+
+    top: 100px;
+    bottom: 200px;
+
+    background: linear-gradient(#EDF2F4, #d8e3e8);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    z-index: 0;
 }
 
 #bottom{
+    position: relative;
+
+    margin-top: auto;
+    height: 100px;
+    
+    border-radius: 20px 20px 0px 0px;
+    border-top: 10px solid #8d99ae;
+    border-left: 5px solid #8d99ae;
+    border-right: 5px solid #8d99ae;
+
+    background-color: #2B2D42;
+
     z-index: 1;
 }
 
@@ -65,46 +95,78 @@ p{
     font-weight: bold;
 }
 
-#pbox{
-    color: #EDF2F4;
-    font-family: "consolas", sans-serif;
-}
-
 /*
-a:link{
+.link{
+    font-family: "consolas", sans-serif;
+    font-weight: bold;
     color: #EDF2F4;
+    width: 10px;
 }
 
-a:visited{
-    color: tomato;
-}
-a:hover{
+.link:hover{
+    font-family: "consolas", sans-serif;
+    font-weight: bold;
     color: #EF233C;
 }
 
-a:active{
+.link:active{
+    font-family: "consolas", sans-serif;
+    font-weight: bold;
     color: #EF233C;
 }
 */
+a:link{
+    font-family: "consolas", sans-serif;
+    font-weight: bold;
+    color: #8d99ae;
+    text-decoration: none;
+}
+
+a:visited{
+    font-family: "consolas", sans-serif;
+    font-weight: bold;
+    color: #8d99ae;
+    text-decoration: none;
+}
+
+a:hover{
+    font-family: "consolas", sans-serif;
+    font-weight: bold;
+    color: #EF233C;
+    text-decoration: underline;
+}
+
+a:active{
+    font-family: "consolas", sans-serif;
+    font-weight: bold;
+    color: #EF233C;
+    text-decoration: underline;
+}
+/*
 button{
-    background-color: #2B2D42;
+    background-color: transparent;
+    border: none;
     color: #EDF2F4;
 }
 
 button:visited{
-    background-color: #2B2D42;
+    background-color: transparent;
+    border: none;
     color: #EDF2F4;
 }
 
 button:hover{
-    background-color: #EDF2F4;
+    background-color: transparent;
+    border: none;
     color: #EF233C;
 }
 
 button:active{
-    background-color: #EDF2F4;
+    background-color: transparent;
+    border: none;
     color: #EF233C;
 }
+*/
 
 #box1{
     border: 5px solid;
