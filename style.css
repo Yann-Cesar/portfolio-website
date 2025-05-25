@@ -30,30 +30,71 @@ body{
     position: sticky;
 
     top:0px;
-    width: 100%;
     height: 100px;
 
     border-radius: 0px 0px 20px 20px;
     border-bottom: 10px solid #8d99ae;
-    border-left: 5px solid #8d99ae;
-    border-right: 5px solid #8d99ae;
+    border-left: 5px solid #d90429;
+    border-right: 5px solid #d90429;
 
     background-color: #2B2D42;
 
     z-index: 2;
+    
+    display: flex;
+    gap: min(20px);
 }
 
 #titlebox{
-    width: 40%;
-    text-align: center;
+    /*text-align: center;*/
+    position: relative;
+    margin-left: 20px;
     margin-right: auto;
-    margin-left: auto;
 }
 
 h1{
     color: #EDF2F4;
     font-family: "Comic Sans MS", "Press Start 2P", sans-serif;
     text-shadow: 2px 2px 0px #EF233C;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.categories{
+    border: 3px solid #FFFFFF;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 1;
+    gap: 50px;
+
+    position: relative;
+    margin-right: 20px;
+    margin-left: auto;
+}
+
+.categorylink{
+    font-size: 20px;
+}
+
+.categorylink:link, .categorylink:visited{
+    color: #EDF2F4;
+    font-family: "Comic Sans MS", "Press Start 2P", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.categorylink:hover, .categorylink:active{
+    color: #EDF2F4;
+    font-family: "Comic Sans MS", "Press Start 2P", sans-serif;
+    text-shadow: 2px 2px 0px #EF233C;
+    font-weight: bold;
+    /*text-decoration: underline;
+    text-decoration-color: #EF233C;*/
 }
 
 #middlepage{
@@ -80,8 +121,8 @@ h1{
     
     border-radius: 20px 20px 0px 0px;
     border-top: 10px solid #8d99ae;
-    border-left: 5px solid #8d99ae;
-    border-right: 5px solid #8d99ae;
+    border-left: 5px solid #d90429;
+    border-right: 5px solid #d90429;
 
     background-color: #2B2D42;
 
@@ -113,7 +154,7 @@ p{
     font-weight: bold;
     color: #EF233C;
 }
-*/
+
 a:link{
     font-family: "consolas", sans-serif;
     font-weight: bold;
@@ -141,6 +182,7 @@ a:active{
     color: #EF233C;
     text-decoration: underline;
 }
+*/
 /*
 button{
     background-color: transparent;
@@ -259,4 +301,30 @@ li:nth-child(2n+1){
 
 li:hover{
     color: #EF233C;
+}
+
+@media(max-width: 575px){
+    #header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        row-gap: 20px;
+
+        height: 150px;
+    }
+
+    #titlebox{
+        /*text-align: center;*/
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .categories{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
