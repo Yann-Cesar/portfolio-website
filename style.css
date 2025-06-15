@@ -60,7 +60,7 @@ h1{
     text-shadow: 2px 2px 0px #EF233C;
 
     white-space: nowrap;
-    overflow: hidden;
+    overflow: visible;
     text-overflow: ellipsis;
 }
 
