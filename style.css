@@ -18,10 +18,13 @@ colorpallet{
 
 body{
     margin: 0px;
+
+    background: linear-gradient(#edf2f4, #d8e3e8);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #fullpage{
-    background-color: #edf2f4;
     display: flex;
     flex-direction: column;
 }
@@ -57,6 +60,7 @@ body{
 h1{
     color: #edf2f4;
     font-family: "Comic Sans MS", "Press Start 2P", sans-serif;
+    font-size: 35px;
     text-shadow: 2px 2px 0px #EF233C;
 
     white-space: nowrap;
@@ -79,12 +83,11 @@ h1{
     position: relative;
     margin-right: 30px;
 
-    list-style: none;
     padding: 0px;
 }
 
 .categorylink{
-    font-size: 19px;
+    font-size: 24px;
 }
 
 .categorylink:link, .categorylink:visited{
@@ -106,28 +109,36 @@ h1{
 #main{
     display: flex;
     flex-direction: column;
-
-    background: linear-gradient(#edf2f4, #d8e3e8);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 #middlepage{
     position: relative;
+    flex-grow: 1;
     z-index: 0;
 }
 
 #faketext{
     position: relative;
     left: 10px;
-    width: 99%;
+    width: 98%;
 }
 
 #faketext p{
     color: #2B2D42;
     font-family: "consolas", sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 22px;
+}
+
+#faketext li{
+    color: #2B2D42;
+    font-family: "consolas", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#faketext li:hover{
+    color: #EF233C;
 }
 
 #bottom{
@@ -162,7 +173,7 @@ h1{
     color:#edf2f4;
     font-family: "consolas", sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 @media all and (max-width: 1000px){
@@ -176,13 +187,11 @@ h1{
         position: sticky;
         
         top: 0px;
-        bottom: 0px;
-        width: 250px;
-        height: 100dvh;
+        height: 100svh;
 
-        border-radius: 0px 20px 0px 0px;
+        border-radius: 0px 0px 0px 0px;
         border-bottom: none;
-        border-top: 10px solid #8d99ae;
+        border-top: none;
         border-right: 5px solid #d90429;
         border-left: none;
 
